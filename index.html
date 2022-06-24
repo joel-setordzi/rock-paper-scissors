@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paper Rock Scissors</title>
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="./images/logo.svg" width="83px" height="48px" alt="Logo">
+            </div>
+            <div class="score-card">
+                <p class="score-title">score</p>
+                <h1 class="score">0</h1>
+            </div>
+        </div>
+        <div class="hand-selection">
+            <div class="hand paper">
+                <img src="./images/icon-paper.svg" alt="Paper" onclick="getUserHand('paper')">
+            </div>
+            <div class="hand scissors">
+                <img src="./images/icon-scissors.svg" alt="Scissors" onclick="getUserHand('scissors')">
+            </div>
+            <div class="hand rock">
+                <img src="./images/icon-rock.svg" alt="Rock" onclick="getUserHand('rock')">
+            </div>
+        </div>
+        <div class="outcome">
+            <div class="userpick">
+                <h2>YOU PICKED</h2>
+                <div class="userImageContainer">
+                    <img src="./images/icon-paper.svg" id="userPickImage" alt="">
+                </div>
+            </div>
+            <div class="result">
+                <div class="status">
+                    <h1 class="status-text">YOU WIN</h1>
+                </div>
+                <div class="btn-newGame">PLAY AGAIN</div>
+            </div>
+            <div class="computerpick">
+                <h2>THE HOUSE PICKED</h2>
+                <div class="computerImageContainer">
+                    <img src="./images/icon-paper.svg" id="computerPickImage" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="rule-section">
+        <a href="#" class="btn rule-btn">RULES</a>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
